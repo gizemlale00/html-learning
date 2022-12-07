@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <form >
+
+        <label for="ad" >Adınız:</label> <br>
+        <input type="text" id="ad" name="ad" required/> <br>
+        <label for="soyad" >Soyadınız: &nbsp;</label> <br>
+        <input type="text" id="soyad" name="soyad" required/> <br>
+        <label for="yas">Yaşınız:</label><br>
+        <input type="number" name="yas" min="0" max="120" required> <br>
+        <label for="image">Resim Ekle</label> <br>
+        <input type="file" id="image" name="image"/> <br>
+        <label for="tc"> TC No</label> <br>
+        <input type="text" name="tc" pattern="[0-9]{11}" required placeholder="11 haneli T.C No Giriniz"> <br>
+        <label for="cinsiyet"> Cinsiyet</label> <br>
+        K<input type="radio" name="cinsiyet" value="K"> 
+        E<input type="radio" name="cinsiyet" value="E"> <br>
+        <label for="dil"> Yabancı Diller</label> <br>
+        İngilizce<input type="checkbox" name="dil" value="İngilizce">
+        Almanca<input type="checkbox" name="dil" value="İngilizce">
+        Fransızca<input type="checkbox" name="dil" value="İngilizce"> <br>
+        <label for="mesaj">Mesajınızı Yazınız</label> <br>
+        <textarea name="mesaj" id="mesaj" cols="30" rows="10" placeholder="Mesajınızı Giriniz..."></textarea> <br>
+        <button type="button">Kaydet</button>
+        <input type="submit" value="Gönder">
+    </form>
+</body>
+</html>
