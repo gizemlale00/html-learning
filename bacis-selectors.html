@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Selectors</title>
+    <style>
+        /*
+        Tüm h1 leri seç
+        */
+       /*  h1 etiketi
+       h1{
+            color: red;
+            background: blueviolet;
+        }
+        p etiketi 
+        p{
+            color: red;
+            background: blueviolet;
+
+        }*/
+        /*h1,p{
+            color: red;
+            background: blueviolet;
+        }*/
+        /* id si logo olanı
+        #logo{
+            color: red;
+            background: blueviolet;
+        }*/
+        /* class ı info olanı
+        .info{
+            color: red;
+            background: blueviolet;
+        }*/
+        /*id si logo class ı lead olanı 
+        #logo, .lead{
+            color: red;
+            background: blueviolet;
+        }*/
+        /*id si para1 ve class ı lead olanı 
+        #para1.lead{
+            color: red;
+            background: blueviolet;
+        }*/
+        /* a etiketi
+        a{
+            text-decoration: none;
+        }*/
+        /*ul nin altındaki li nin a etiketindeki olanı 
+        ul li a{
+            text-decoration: none;
+        }*/
+        /* class ı info olanın içindeki spanı 
+        .info span{
+            color: red;
+        }*/
+        /* class ı info ve primary olanı 
+        .info .primary{
+            color: red;
+        }*/
+        /* Tüm elementleri seçer 
+        *{
+            font-size: 30px;
+            color: red;
+        }*/
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Header 1</h1>
+        <h1 id="logo"> Logo</h1>
+        <ul>
+            <li>
+                <a href="#"> Contact</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+        </ul>
+    </header>
+    <h1>Header 2</h1>
+    <p id="para1" class="lead info"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, nam?</p>
+    <p class="info"> Lorem ipsum, <span class="primary">dolor</span> sit amet consectetur adipisicing elit. Quia, pariatur.</p>
+    <p class="info"> Lorem ipsum, <span>dolor</span> sit amet consectetur adipisicing elit. Quia, pariatur.</p>
+    <p> Test Paragraph</p>
+    <a href="#"> Home</a>
+</body>
+</html>
