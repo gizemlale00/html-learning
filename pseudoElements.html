@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Pseudo Element</title>
+    <style>
+        .para1{
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            line-height: 1.5em;
+        }
+        .para1::first-line{
+            color:red;
+        }
+        .para1::first-letter{
+            color: blue;
+            font-size: 60px;
+        }
+        .para1::before{
+            content: url(images/resim2.jpg);
+        }
+        .para1::after{
+            content: "Paragraf sonrası";
+        }
+    </style>
+</head>
+<body>
+    <p class="para1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quas non officia maiores repellat aperiam molestiae porro laborum! Eos quae suscipit maiores numquam quo aliquam corrupti ullam, debitis optio quos, labore reprehenderit cupiditate porro quasi temporibus! Accusamus explicabo quod quis voluptas magni quasi perferendis aliquam atque recusandae, aliquid, totam inventore, maiores neque quisquam culpa hic. Quasi doloribus debitis quidem non qui voluptatem, odit possimus repudiandae ullam. Laborum maiores tempora, pariatur expedita nisi veniam quas dolorum, atque asperiores quo unde harum in consequuntur deserunt eligendi excepturi dicta placeat facilis perferendis enim. Quia quibusdam totam aperiam placeat culpa recusandae iste numquam aliquam.
+    </p>
+</body>
+</html>
