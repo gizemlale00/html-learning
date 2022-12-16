@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ornek Table</title>
+    <style>
+        table, tr, td, th{
+            border: 3px solid white;
+            border-collapse: collapse;
+        }
+        table{
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.5em;
+        }
+        th,td{
+            padding: 10px;
+        }
+        thead tr {
+            background: black;
+            color: yellow;
+        }
+        tbody tr{
+            text-align: center;
+        }
+        tbody tr:nth-child(even){
+            color: yellow;
+            background: darkblue;
+        }
+        tbody tr:nth-child(odd){
+            color: darkblue;
+            background: yellow;
+        }
+        
+        tbody tr:hover{
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <table class="tablo">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Email</th>
+                <th>Telephone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>abc@gmail.com</td>
+                <td>05..........</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>abc@gmail.com</td>
+                <td>05..........</td>
+            </tr><tr>
+                <td>1</td>
+                <td>abc@gmail.com</td>
+                <td>05..........</td>
+            </tr><tr>
+                <td>1</td>
+                <td>abc@gmail.com</td>
+                <td>05..........</td>
+            </tr><tr>
+                <td>1</td>
+                <td>abc@gmail.com</td>
+                <td>05..........</td>
+            </tr><tr>
+                <td>1</td>
+                <td>abc@gmail.com</td>
+                <td>05..........</td>
+            </tr><tr>
+                <td>1</td>
+                <td>abc@gmail.com</td>
+                <td>05..........</td>
+            </tr><tr>
+                <td>1</td>
+                <td>abc@gmail.com</td>
+                <td>05..........</td>
+            </tr><tr>
+                <td>1</td>
+                <td>abc@gmail.com</td>
+                <td>05..........</td>
+            </tr><tr>
+                <td>1</td>
+                <td>abc@gmail.com</td>
+                <td>05..........</td>
+            </tr><tr>
+                <td>1</td>
+                <td>abc@gmail.com</td>
+                <td>05..........</td>
+            </tr><tr>
+                <td>1</td>
+                <td>abc@gmail.com</td>
+                <td>05..........</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
