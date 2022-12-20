@@ -7,7 +7,7 @@
     <title>Ornek Table</title>
     <style>
         table, tr, td, th{
-            border: 3px solid white;
+            border: 10px solid white;
             border-collapse: collapse;
         }
         table{
@@ -26,24 +26,34 @@
         tbody tr{
             text-align: center;
         }
-        tbody tr:nth-child(even){
+        tbody tr:nth-child(3n+2){
             color: yellow;
             background: darkblue;
         }
-        tbody tr:nth-child(odd){
+        tbody tr:nth-child(3n+3){
+            background:yellow;
+        }
+        tbody tr:nth-child(3n-2){
+            background: white;
+        }
+        /* tbody tr:nth-child(odd){
             color: darkblue;
             background: yellow;
+        } */
+
+        tbody tr:nth-child(3n+2):hover{
+            background: yellow;
+            color: darkblue;
+        }
+        tbody tr:nth-child(3n-2):hover{
+            background: black;
+            color: yellow;
+        }
+        tbody tr:nth-child(3n+3):hover{
+            background: darkblue;
+            color: yellow;
         }
         
-        tbody tr:nth-child(even):hover{
-            background: white;
-            color: black;
-        }
-        tbody tr:nth-child(odd):hover{
-            background: black;
-            color: white;
-        }
-
     </style>
 </head>
 <body>
